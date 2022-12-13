@@ -180,25 +180,39 @@ export const Container = styled('span', {
                 filter: 'drop-shadow(0vmax 0vmax .6vmax rgb(13, 232, 132, 0.4))',
             },
             menuTitle: {
+                maxWidth: '100%',
+                
                 fontSize: '.6vmax',
                 fontWeight: '600',
 
                 textAlign: 'center',
                 textTransform: 'uppercase',
+                textOverflow: 'ellipsis',
 
                 color: 'var(--green)',
 
                 filter: 'drop-shadow(0vmax 0vmax .5vmax rgb(13, 232, 132, 0.4))',
+
+                overflow: 'hidden',
+
+                whiteSpace: 'nowrap',
             },
-            menuSubtitle: {                
+            menuSubtitle: {               
+                maxWidth: '100%',
+
                 fontSize: '.4vmax',
                 fontWeight: '600',
 
                 textTransform: 'uppercase',
+                textOverflow: 'ellipsis',
 
                 color: 'var(--white)',
 
                 filter: 'drop-shadow(0vmax 0vmax .2vmax rgba(235, 235, 235, 0.5))',
+
+                overflow: 'hidden',
+                
+                whiteSpace: 'nowrap',
             },
         },
     },

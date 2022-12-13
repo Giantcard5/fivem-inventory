@@ -37,21 +37,30 @@ import {
 } from 'hooks/useMenu';
 
 import { 
-    TItem
+    TPlayer 
+} from 'types/Player';
+
+import { 
+    TItem 
 } from 'types/Item';
 
 import { 
-    TWeight 
-} from 'types/Weight';
+    preventMinus 
+} from 'utils/prevent';
+
+import { 
+    fetchNui 
+} from 'utils/fetchNui';
 
 const Inventory: React.FC = () => {
+    const [player, setPlayer] = useState<TPlayer>({} as TPlayer);
+
     const [search, setSearch] = useState<string>('');
     const [filter, setFilter] = useState<string>('');
-    const [weight, setWeight] = useState<TWeight>({} as TWeight);
+
     const [quantity, setQuantity] = useState<number>(0);
 
-    const [inventory, setInventory] = useState<TItem[]>([]);
-
+    // Providers
     const { 
         visible: modalVisible, 
         setVisible: setModalVisible,
@@ -63,14 +72,15 @@ const Inventory: React.FC = () => {
         position: menuPosition
     } = useMenu();
     
-    const { item } = useItem();
+    const { 
+        item 
+    } = useItem();
 
+    // Nui Events
+    useNuiEvent<TPlayer>('getPlayer', setPlayer);
+
+    // Functions
     const handleFilter = (value: string) => value !== filter ? setFilter(value) : setFilter('');
-
-    const preventMinus = (event: any) => event.code === 'Minus' && event.preventDefault();
-
-    useNuiEvent<TItem[]>('getInventory', setInventory);
-    useNuiEvent<TWeight>('getWeight', setWeight);
 
     return (
         <Container>
@@ -105,16 +115,16 @@ const Inventory: React.FC = () => {
                             </Article>
 
                             <Block type='weight'>
-                                <Text type='weight'>{weight.weight} / {weight.maxWeight} KG</Text>
+                                <Text type='weight'>{player.weight?.value} / {player.weight?.maxValue} KG</Text>
                             </Block>
                         </Block>
 
-                        <Progress value={weight.weight} max={weight.maxWeight}/>
+                        <Progress value={player.weight?.value as number} max={player.weight?.maxValue as number}/>
                     </Navigator>
 
-                    {inventory ? (
+                    {player.inventory?.length ? (
                         <Grid>
-                            {inventory.filter((value) => {
+                            {player.inventory.filter((value) => {
                                 if (search === '') {
                                     if (filter === '') {
                                         return value;
@@ -158,9 +168,8 @@ const Inventory: React.FC = () => {
                     title={modalType + ' ' + item.name}
                     subtitle={'Choose the quantity you want to ' + modalType}
                     handleAccept={() => {
-                        if(quantity <= item.amount) {
-                            // Fetch NUI Item
-                            console.log(item);
+                        if(quantity > 0 && quantity <= item.amount ) {
+                            fetchNui<TItem>(modalType.toLowerCase() + 'Item', item);
 
                             setModalVisible(false);
                         };

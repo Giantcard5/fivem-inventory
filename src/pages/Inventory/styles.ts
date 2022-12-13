@@ -16,7 +16,7 @@ export const Content = styled('main', {
     flexDirection: 'column',
 
     width: '24vw',
-    height: '91vh',
+    height: '93vh',
 
     margin: '2vmax 0vmax 0vmax 2.4vmax',
 });

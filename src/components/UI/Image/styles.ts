@@ -14,8 +14,10 @@ export const Container = styled('img', {
                 height: '60%',
             },
             menu: {
-                width: '1vmax',
-                height: '1vmax',
+                width: '.8vmax',
+                height: '.8vmax',
+                
+                filter: 'drop-shadow(0vmax 0vmax .4vmax rgba(235, 235, 235, 0.4))',
 
                 margin: '0vmax .4vmax 0vmax .2vmax',
             },

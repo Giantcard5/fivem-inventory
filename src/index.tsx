@@ -38,500 +38,501 @@ debugData([
 
 debugData([
     {
-        action: 'getWeight',
+        action: 'getPlayer',
         data: {
-            weight: 90,
-            maxWeight: 100,
+            player: {
+                name: 'Renato',
+                lastName: 'Soares',
+                age: '20'
+            },
+            weight: {
+                value: 90,
+                maxValue: 100,
+            },
+            inventory: [
+                {
+                    "id": 1,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 10,
+                    "weight": 1
+                },
+                {
+                    "id": 2,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 3,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 4,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 5,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 10,
+                    "weight": 1
+                },
+                {
+                    "id": 6,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 7,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 8,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 9,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 10,
+                    "weight": 1
+                },
+                {
+                    "id": 10,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 11,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 12,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 1,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 2,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 3,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 4,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 5,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 6,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 7,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 8,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 9,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 10,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 11,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 12,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 1,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 2,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 3,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 4,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 5,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 6,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 7,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 8,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 9,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 10,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 11,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 12,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 1,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 2,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 3,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 4,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 5,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 6,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 7,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 8,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 9,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 10,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 11,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 12,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 1,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 2,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 3,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 4,
+                    "name": "Weapon",
+                    "description": "Weapon Description",
+                    "type": "Weapon",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 5,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 6,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 7,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 8,
+                    "name": "Food",
+                    "description": "Food Description",
+                    "type": "Food",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 9,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 10,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 11,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+                {
+                    "id": 12,
+                    "name": "Other",
+                    "description": "Other Description",
+                    "type": "Other",
+                    "amount": 1,
+                    "weight": 1
+                },
+            ],
         },
     },
-]);
-
-debugData([
-    {
-        action: 'getInventory',
-        data: [
-            {
-                "id": 1,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 10,
-                "weight": 1
-            },
-            {
-                "id": 2,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 3,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 4,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 5,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 10,
-                "weight": 1
-            },
-            {
-                "id": 6,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 7,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 8,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 9,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 10,
-                "weight": 1
-            },
-            {
-                "id": 10,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 11,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 12,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 1,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 2,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 3,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 4,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 5,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 6,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 7,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 8,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 9,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 10,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 11,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 12,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 1,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 2,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 3,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 4,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 5,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 6,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 7,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 8,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 9,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 10,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 11,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 12,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 1,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 2,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 3,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 4,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 5,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 6,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 7,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 8,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 9,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 10,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 11,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 12,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 1,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 2,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 3,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 4,
-                "name": "Weapon",
-                "description": "Weapon Description",
-                "type": "Weapon",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 5,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 6,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 7,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 8,
-                "name": "Food",
-                "description": "Food Description",
-                "type": "Food",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 9,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 10,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 11,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-            {
-                "id": 12,
-                "name": "Other",
-                "description": "Other Description",
-                "type": "Other",
-                "amount": 1,
-                "weight": 1
-            },
-        ]
-    }
 ]);
 
 root.render(      

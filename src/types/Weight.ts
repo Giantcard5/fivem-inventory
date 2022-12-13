@@ -1,6 +1,6 @@
 type TWeight = {
-    weight: number;
-    maxWeight: number;
+    value: number;
+    maxValue: number;
 }
 
 export { TWeight };

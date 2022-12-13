@@ -27,5 +27,5 @@ yarn build
 
 ## Preview
 ![Inventory Preview](https://media.discordapp.net/attachments/867877257586278420/1051660313105289237/image.png?width=1344&height=701 "Inventory Preview")
-![Inventory Preview](https://media.discordapp.net/attachments/867877257586278420/1051660376518963302/image.png?width=1346&height=701 "Inventory Preview")
+![Inventory Preview](https://media.discordapp.net/attachments/867877257586278420/1052313042928533636/image.png?width=1337&height=701 "Inventory Preview")
 ![Inventory Preview](https://media.discordapp.net/attachments/867877257586278420/1051660405694529536/image.png?width=1339&height=701 "Inventory Preview")

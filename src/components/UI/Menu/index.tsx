@@ -14,6 +14,10 @@ import {
 } from 'types/Menu';
 
 import { 
+    TItem 
+} from 'types/Item';
+
+import { 
     useModal 
 } from 'hooks/useModal';
 
@@ -24,6 +28,14 @@ import {
 import { 
     useItem 
 } from 'hooks/useItem';
+
+import { 
+    fetchNui 
+} from 'utils/fetchNui';
+
+import DeleteSVG from 'assets/icons/delete.svg';
+import DropSVG from 'assets/icons/drop.svg';
+import SendSVG from 'assets/icons/send.svg';
 
 const Menu: React.FC<TMenu> = (props)=> {
     const { 
@@ -46,8 +58,7 @@ const Menu: React.FC<TMenu> = (props)=> {
             setModalType(type);
             setModalVisible(true);
         } else {
-            // Fetch NUI Item
-            console.log(item)
+            fetchNui<TItem>(type.toLowerCase() + 'Item', item);
         }
     };
 
@@ -82,17 +93,17 @@ const Menu: React.FC<TMenu> = (props)=> {
 
             <Block type='buttons'>
                 <Button type='menu' onClick={() => handleItemClick('Send')}>
-                    <Image type='menu' src='' alt=''/>
+                    <Image type='menu' src={SendSVG} alt='Send'/>
 
                     <Text type='menu'>Send</Text>
                 </Button>
                 <Button type='menu' onClick={() => handleItemClick('Drop')}>
-                    <Image type='menu' src='' alt=''/>
+                    <Image type='menu' src={DropSVG} alt='Drop'/>
 
                     <Text type='menu'>Drop</Text>
                 </Button>
                 <Button type='menu' onClick={() => handleItemClick('Delete')}>
-                    <Image type='menu' src='' alt=''/>
+                    <Image type='menu' src={DeleteSVG} alt='Delete'/>
 
                     <Text type='menu'>Delete</Text>
                 </Button>

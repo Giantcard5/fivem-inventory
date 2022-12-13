@@ -28,13 +28,11 @@ export const Block = styled('div', {
                 border: '0.15vmax solid rgba(213, 213, 213, 0.1)',
                 borderRadius: '.1vmax',
 
-                boxShadow: '0vmax 0vmax 1vmax rgba(213, 213, 213, 0.05), inset 0vmax 0vmax 1vmax rgba(213, 213, 213, 0.05)',
+                boxShadow: '0vmax 0vmax 1vmax rgba(213, 213, 213, 0.05), inset 0vmax 0vmax 2vmax rgba(213, 213, 213, 0.05)',
 
-                background: 'rgb(255, 255, 255, 0.05)',
+                background: 'var(--background)',
             },
-            buttons: {
-                
-            },
+            buttons: {},
         },
     },
 });

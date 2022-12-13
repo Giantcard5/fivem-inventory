@@ -32,13 +32,19 @@ import {
     useMenu 
 } from 'hooks/useMenu';
 
+import { 
+    fetchNui 
+} from 'utils/fetchNui';
+
 const Item: React.FC<TItem> = (props) => {
     const { 
         setVisible: setModalVisible,
         setType: setModalType
     } = useModal();
 
-    const { setItem } = useItem()
+    const { 
+        setItem 
+    } = useItem()
 
     const { 
         setVisible: setMenuVisible, 
@@ -85,7 +91,7 @@ const Item: React.FC<TItem> = (props) => {
                 type='item'
                 onClick={() => { 
                     if (props.amount <= 1) {
-                        console.log(props)
+                        fetchNui<TItem>('useItem', props);
                     } else {
                         setItem(props);
 
