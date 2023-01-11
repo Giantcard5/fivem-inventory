@@ -82,7 +82,7 @@ const Menu: React.FC<TMenu> = (props)=> {
         <Container 
             ref={MenuRef as any}
             style={{ 
-                top: props.y + 15, 
+                top: props.y,
                 left: props.x + 15, 
             }}
         >

@@ -64,7 +64,11 @@ const Item: React.FC<TItem> = (props) => {
             onContextMenu={(event) => {
                 setItem(props);
 
-                openContextMenu(event, { x: event.pageX, y: event.pageY });
+                if (event.pageY <= 930) {
+                    openContextMenu(event, { x: event.pageX, y: event.pageY });
+                } else {
+                    openContextMenu(event, { x: event.pageX, y: 920 });
+                }
             }}
         >
             <Image>
