@@ -16,9 +16,10 @@ export const Content = styled('main', {
     flexDirection: 'column',
 
     width: '24vw',
-    height: '93vh',
+    height: '100%',
 
-    margin: '2vmax 0vmax 0vmax 2.4vmax',
+    margin: '0vmax 0vmax 0vmax 2.4vmax',
+    padding: '2vmax 0vmax',
 });
 
 export const Section = styled('section', {

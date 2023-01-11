@@ -26,6 +26,6 @@ yarn build
 ```
 
 ## Preview
-![Inventory Preview](https://media.discordapp.net/attachments/867877257586278420/1051660313105289237/image.png?width=1344&height=701 "Inventory Preview")
-![Inventory Preview](https://media.discordapp.net/attachments/867877257586278420/1052313042928533636/image.png?width=1337&height=701 "Inventory Preview")
-![Inventory Preview](https://media.discordapp.net/attachments/867877257586278420/1051660405694529536/image.png?width=1339&height=701 "Inventory Preview")
+![Inventory Preview](https://media.discordapp.net/attachments/894609191870812262/1062764400047562762/image.png?width=1256&height=655 "Inventory Preview")
+![Inventory Preview](https://media.discordapp.net/attachments/894609191870812262/1062764410919207103/image.png?width=1249&height=655 "Inventory Preview")
+![Inventory Preview](https://media.discordapp.net/attachments/894609191870812262/1062764417885945938/image.png?width=1251&height=655 "Inventory Preview")

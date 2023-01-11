@@ -6,7 +6,7 @@ export const Container = styled('div', {
     
     rowGap: '.7vmax',
 
-    maxHeight: '40.3vmax',
+    maxHeight: '41.4vmax',
 
     overflow: 'hidden',
     overflowY: 'scroll',
